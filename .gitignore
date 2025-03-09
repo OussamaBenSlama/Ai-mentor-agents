@@ -1,0 +1,65 @@
+# Byte-compiled / cached files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+*.swn
+*.bak
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# MyPy
+.mypy_cache/
+
+# VSCode and other IDE settings
+.vscode/
+.idea/
+*.iml
+
+# Environment variables and secrets
+.env
+*.env
+.env.local
+secrets.json
+config.json
+
+# SQLite database
+*.sqlite3
+db.sqlite3
+
+# Docker
+docker-compose.override.yml
+
+# Ignore static and media files (if applicable)
+staticfiles/
+media/
+
+# Ignore compiled Cython files
+*.c
+*.so

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instructo</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <script>
+      function showLoader() {
+        document.getElementById("loader").style.display = "flex";
+      }
+    </script>
+    
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="nav-brand">🤖 Instructo</div>
+        <div class="nav-links">
+          <a href="#" class="nav-link">Documentation</a>
+          <a href="#" class="nav-link">Contact</a>
+        </div>
+      </nav>
+
+      <main class="hero">
+        <div class="hero-content">
+          <h1>Start learning instantly</h1>
+          <p class="subtitle">
+            Unlock the power of AI to learn any topic effortlessly
+          </p>
+
+          <div class="search-container">
+            <form method="post" class="search-box" onsubmit="showLoader()">
+              <input
+                type="text"
+                id="topic"
+                name="topic"
+                placeholder="What do you want to learn today?"
+                required
+              />
+              <button type="submit" id="submit-btn" class="import-button">
+                Start
+              </button>
+            </form>
+
+            <div id="loader" class="loader" style="display: none">
+              <svg width="100" height="100" viewBox="0 0 50 50"><g><g><circle cx="15" cy="15" r="4" fill="#60A5FA"><animate attributeName="opacity" values="1;0.4;1" dur="1.5s" begin="0s" repeatCount="indefinite"></animate></circle><path d="M19,15 L31,15" stroke="#60A5FA" stroke-width="1" opacity="0.5"><animate attributeName="stroke-dasharray" values="0,12;12,0;0,12" dur="1.5s" begin="0s" repeatCount="indefinite"></animate></path><path d="M19,15 L31,35" stroke="#60A5FA" stroke-width="1" opacity="0.5"><animate attributeName="stroke-dasharray" values="0,12;12,0;0,12" dur="1.5s" begin="0.1s" repeatCount="indefinite"></animate></path><path d="M19,15 L31,55" stroke="#60A5FA" stroke-width="1" opacity="0.5"><animate attributeName="stroke-dasharray" values="0,12;12,0;0,12" dur="1.5s" begin="0.2s" repeatCount="indefinite"></animate></path></g><g><circle cx="15" cy="35" r="4" fill="#60A5FA"><animate attributeName="opacity" values="1;0.4;1" dur="1.5s" begin="0.2s" repeatCount="indefinite"></animate></circle><path d="M19,35 L31,15" stroke="#60A5FA" stroke-width="1" opacity="0.5"><animate attributeName="stroke-dasharray" values="0,12;12,0;0,12" dur="1.5s" begin="0.1s" repeatCount="indefinite"></animate></path><path d="M19,35 L31,35" stroke="#60A5FA" stroke-width="1" opacity="0.5"><animate attributeName="stroke-dasharray" values="0,12;12,0;0,12" dur="1.5s" begin="0.2s" repeatCount="indefinite"></animate></path><path d="M19,35 L31,55" stroke="#60A5FA" stroke-width="1" opacity="0.5"><animate attributeName="stroke-dasharray" values="0,12;12,0;0,12" dur="1.5s" begin="0.30000000000000004s" repeatCount="indefinite"></animate></path></g><g><circle cx="15" cy="55" r="4" fill="#60A5FA"><animate attributeName="opacity" values="1;0.4;1" dur="1.5s" begin="0.4s" repeatCount="indefinite"></animate></circle><path d="M19,55 L31,15" stroke="#60A5FA" stroke-width="1" opacity="0.5"><animate attributeName="stroke-dasharray" values="0,12;12,0;0,12" dur="1.5s" begin="0.2s" repeatCount="indefinite"></animate></path><path d="M19,55 L31,35" stroke="#60A5FA" stroke-width="1" opacity="0.5"><animate attributeName="stroke-dasharray" values="0,12;12,0;0,12" dur="1.5s" begin="0.30000000000000004s" repeatCount="indefinite"></animate></path><path d="M19,55 L31,55" stroke="#60A5FA" stroke-width="1" opacity="0.5"><animate attributeName="stroke-dasharray" values="0,12;12,0;0,12" dur="1.5s" begin="0.4s" repeatCount="indefinite"></animate></path></g></g><g><g><circle cx="35" cy="15" r="4" fill="#60A5FA"><animate attributeName="opacity" values="1;0.4;1" dur="1.5s" begin="0.2s" repeatCount="indefinite"></animate></circle><path d="M39,15 L51,15" stroke="#60A5FA" stroke-width="1" opacity="0.5"><animate attributeName="stroke-dasharray" values="0,12;12,0;0,12" dur="1.5s" begin="0.1s" repeatCount="indefinite"></animate></path><path d="M39,15 L51,35" stroke="#60A5FA" stroke-width="1" opacity="0.5"><animate attributeName="stroke-dasharray" values="0,12;12,0;0,12" dur="1.5s" begin="0.2s" repeatCount="indefinite"></animate></path><path d="M39,15 L51,55" stroke="#60A5FA" stroke-width="1" opacity="0.5"><animate attributeName="stroke-dasharray" values="0,12;12,0;0,12" dur="1.5s" begin="0.30000000000000004s" repeatCount="indefinite"></animate></path></g><g><circle cx="35" cy="35" r="4" fill="#60A5FA"><animate attributeName="opacity" values="1;0.4;1" dur="1.5s" begin="0.4s" repeatCount="indefinite"></animate></circle><path d="M39,35 L51,15" stroke="#60A5FA" stroke-width="1" opacity="0.5"><animate attributeName="stroke-dasharray" values="0,12;12,0;0,12" dur="1.5s" begin="0.2s" repeatCount="indefinite"></animate></path><path d="M39,35 L51,35" stroke="#60A5FA" stroke-width="1" opacity="0.5"><animate attributeName="stroke-dasharray" values="0,12;12,0;0,12" dur="1.5s" begin="0.30000000000000004s" repeatCount="indefinite"></animate></path><path d="M39,35 L51,55" stroke="#60A5FA" stroke-width="1" opacity="0.5"><animate attributeName="stroke-dasharray" values="0,12;12,0;0,12" dur="1.5s" begin="0.4s" repeatCount="indefinite"></animate></path></g><g><circle cx="35" cy="55" r="4" fill="#60A5FA"><animate attributeName="opacity" values="1;0.4;1" dur="1.5s" begin="0.6000000000000001s" repeatCount="indefinite"></animate></circle><path d="M39,55 L51,15" stroke="#60A5FA" stroke-width="1" opacity="0.5"><animate attributeName="stroke-dasharray" values="0,12;12,0;0,12" dur="1.5s" begin="0.30000000000000004s" repeatCount="indefinite"></animate></path><path d="M39,55 L51,35" stroke="#60A5FA" stroke-width="1" opacity="0.5"><animate attributeName="stroke-dasharray" values="0,12;12,0;0,12" dur="1.5s" begin="0.4s" repeatCount="indefinite"></animate></path><path d="M39,55 L51,55" stroke="#60A5FA" stroke-width="1" opacity="0.5"><animate attributeName="stroke-dasharray" values="0,12;12,0;0,12" dur="1.5s" begin="0.5s" repeatCount="indefinite"></animate></path></g></g><g><g><circle cx="55" cy="15" r="4" fill="#60A5FA"><animate attributeName="opacity" values="1;0.4;1" dur="1.5s" begin="0.4s" repeatCount="indefinite"></animate></circle></g><g><circle cx="55" cy="35" r="4" fill="#60A5FA"><animate attributeName="opacity" values="1;0.4;1" dur="1.5s" begin="0.6000000000000001s" repeatCount="indefinite"></animate></circle></g><g><circle cx="55" cy="55" r="4" fill="#60A5FA"><animate attributeName="opacity" values="1;0.4;1" dur="1.5s" begin="0.8s" repeatCount="indefinite"></animate></circle></g></g></svg>     
+              <p>Loading ...</p>       
+            </div>
+          </div>
+
+          <div class="templates">
+            <h2>Our Services</h2>
+            <div class="template-grid">
+              <div class="template-card">
+                <div class="template-icon">🗂️</div>
+                <div class="template-info">
+                  <h3>Structured Learning</h3>
+                  <p>
+                    Follow a clear, step-by-step roadmap to master any topic
+                  </p>
+                </div>
+              </div>
+              <div class="template-card">
+                <div class="template-icon">📖</div>
+                <div class="template-info">
+                  <h3>High-Quality Resources</h3>
+                  <p>
+                    Access top-tier materials curated for effective learning
+                  </p>
+                </div>
+              </div>
+              <div class="template-card">
+                <div class="template-icon">🧩</div>
+                <div class="template-info">
+                  <h3>Interactive & Engaging</h3>
+                  <p>
+                    Learn through quizzes, challenges, and real-world
+                    applications.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
